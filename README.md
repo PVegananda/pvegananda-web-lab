@@ -1,123 +1,99 @@
 <div align="center">
+  <img src="img/logo.jpg" alt="PVegananda Web Lab logo" width="180">
 
-  <!-- Banner -->
-  <div style="
-      width: 100%;
-      padding: 45px 0;
-      background: linear-gradient(135deg, #1e1e2e, #35355e);
-      border-radius: 14px;
-      color: #ffffff;
-      font-family: Arial, sans-serif;
-  ">
-      <h1 style="font-size: 40px; margin-bottom: 8px;">🛠️ SIMPLE PHP Template</h1>
-      <p style="font-size: 18px; opacity: 0.9;">
-          Lightweight PHP Website Boilerplate / Template for Rapid Development
-      </p>
-  </div>
+  # PVegananda Web Lab
 
-  <br />
+  **A clean, interactive PHP showcase for practical web experiences.**
 
-  <!-- Badges -->
-  <img src="https://img.shields.io/badge/Language-PHP-777BB4?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Platform-Web-lightgrey?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Status-Template%20Boilerplate-blue?style=for-the-badge" />
-
+  <p>
+    <a href="https://www.php.net/"><img src="https://img.shields.io/badge/PHP-8%2B-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP 8+"></a>
+    <a href="https://getbootstrap.com/"><img src="https://img.shields.io/badge/Bootstrap-5-7952B3?style=flat-square&logo=bootstrap&logoColor=white" alt="Bootstrap 5"></a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5"></a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3"></a>
+    <a href="https://github.com/PVegananda/pvegananda-web-lab"><img src="https://img.shields.io/github/stars/PVegananda/pvegananda-web-lab?style=flat-square" alt="GitHub stars"></a>
+  </p>
 </div>
 
-<br/><br/>
+## Overview
 
-<h2>📌 Project Overview</h2>
-<p>
-The <strong>SIMPLE_PHP_TEMPLATE</strong> repository is a minimalistic yet robust starting point for building PHP-based web projects.  
-It provides a clean directory structure, reusable components (such as header/footer or navigation includes), and base files for quick setup — allowing developers to focus on core logic instead of repetitive boilerplate.  
-This template is ideal for small to medium websites, prototypes, learning projects, or as a base for more complex web applications.
-</p>
+PVegananda Web Lab is a lightweight PHP website that brings several small,
+interactive experiences together in one polished interface. It is designed
+to demonstrate practical front-end structure, reusable PHP partials, and
+browser-based interactions without the overhead of a full framework.
 
-<h2>🧩 What This Template Offers</h2>
-<ul>
-  <li>Standard directory/file structure for PHP web projects</li>
-  <li>Reusable include files — e.g. header, footer, navigation, config files</li>
-  <li>Separation of concerns: content, layout, and configuration separated for cleaner code</li>
-  <li>Support for dynamic page titles and metadata via configuration — easy to maintain across multiple pages</li>
-  <li>Optional integration with a database or form processing (if needed)</li>
-  <li>Lightweight — no heavy frameworks, easy to understand and extend</li>
-</ul>
+The project is intentionally easy to explore and extend. Shared navigation,
+styles, scripts, and page layouts are kept in predictable locations so a new
+feature can be added without duplicating the entire interface.
 
-<br/>
+## What's included
 
-<h2>📁 Recommended Directory Structure (Example)</h2>
-<pre>
-/ (root)
-  ├── assets/           ← CSS, JS, images, etc.
-  ├── includes/         ← header.php, footer.php, nav.php, config.php, etc.
-  ├── pages/            ← individual page PHP files (home.php, about.php, etc.)
-  ├── index.php         ← main entry (could route to pages or include header/footer)
-  └── README.html (or .md)
-</pre>
+- Responsive Bootstrap-based layout with reusable navigation and page partials
+- A welcoming home page for the project
+- A playable Snake game
+- A simple age-guessing interaction
+- An interactive knowledge quiz
+- A records page ready to be connected to CRUD workflows
+- Automatic loading for local CSS and JavaScript assets
 
-*(Actual structure may vary — adjust as per your files.)*
+## Project structure
 
-<br/>
+```text
+.
+├── index.php                 # Application entry point
+├── home.php                  # Home page
+├── snake-game.php            # Snake game
+├── age-guess.php             # Age-guessing interaction
+├── knowledge-quiz.php        # Interactive quiz
+├── records.php               # Records and CRUD area
+├── partials/
+│   ├── header.php            # Shared document head
+│   ├── navigation.php        # Sidebar navigation
+│   └── footer.php            # Shared document footer
+├── css/
+│   └── navigation.css        # Navigation styles
+├── js/
+│   └── navigation.js         # Navigation behavior
+└── img/
+    └── logo.jpg              # Project branding
+```
 
-<h2>📥 1. Setup & Installation</h2>
-<ol>
-  <li>Clone the repository:</li>
-</ol>
-<pre>
-git clone https://github.com/PVegananda/SIMPLE_PHP_TEMPLATE
-cd SIMPLE_PHP_TEMPLATE
-</pre>
-<ol start="2">
-  <li>Copy project folder into your web server root — e.g. <code>htdocs/</code> (XAMPP), <code>www/</code> (WAMP/Laragon) or your hosting directory.</li>
-  <li>If using a database — configure your DB connection (host, user, password, db name) in the config file (e.g. <code>includes/config.php</code>).</li>
-  <li>Open the site in your browser — e.g. <code>http://localhost/SIMPLE_PHP_TEMPLATE/</code></li>
-</ol>
+## Getting started
 
-<br/>
+### Requirements
 
-<h2>🌐 Usage & How to Build Your Website</h2>
-<ol>
-  <li>Create a new PHP file inside the pages folder (e.g. <code>pages/about.php</code>)</li>
-  <li>At the top of your page file, include the config and header files:</li>
-  <pre>
-<?php
-include '../includes/config.php';
-include '../includes/header.php';
-// page content here
-include '../includes/footer.php';
-?>
-  </pre>
-  <li>Adjust navigation if needed (e.g. for active menu highlighting)</li>
-  <li>Add CSS/JS or other assets under <code>assets/</code> and link from header or footer</li>
-  <li>If you need forms or database — add your logic, using the existing config for DB connection</li>
-</ol>
+- PHP 8.0 or newer
+- A local PHP server such as PHP's built-in server, Apache, or Nginx
+- A modern web browser
 
-<br/>
+### Run locally
 
-<h2>✨ Why Use This Template</h2>
-<ul>
-  <li>Speeds up project start — no need to write boilerplate again and again</li>
-  <li>Encourages organized structure & clean separation of layout and logic</li>
-  <li>Easy to customize and expand — ideal for learning or building small web apps</li>
-  <li>Lightweight and dependency-free — good if you don’t want a full framework</li>
-</ul>
+1. Clone the repository:
 
-<br/>
+   ```bash
+   git clone https://github.com/PVegananda/pvegananda-web-lab.git
+   cd pvegananda-web-lab
+   ```
 
-<h2>🔧 Recommended Environment</h2>
-<ul>
-  <li>PHP 7.x or 8.x</li>
-  <li>Apache / Nginx (with PHP support) — e.g. via XAMPP, WAMP, Laragon, or web hosting</li>
-  <li>A text editor or IDE — e.g. VS Code, Sublime Text, PHPStorm</li>
-</ul>
+2. Start PHP's built-in development server:
 
-<br/>
+   ```bash
+   php -S localhost:8000
+   ```
 
-<h2>📄 License</h2>
-<p>This template is free to use, modify, and build upon — perfect for educational, personal, or small-scale commercial use.</p>
+3. Open [http://localhost:8000](http://localhost:8000) in your browser.
 
-<br/>
+## Customization
+
+Update the shared files in `partials/` to change the site-wide layout.
+Page-specific content lives in the root PHP files, while visual behavior is
+organized under `css/` and `js/`. This keeps the project approachable for
+experimentation and makes it straightforward to add new pages or interactions.
+
+## License
+
+This project is available for personal and portfolio use. Add a license file
+if you plan to distribute or reuse it under specific terms.
 
 <div align="center">
-  <h3>🚀 Start your PHP project quickly — with structure, clarity, and simplicity!</h3>
+  Built by <a href="https://github.com/PVegananda">PVegananda</a>
 </div>

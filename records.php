@@ -15,7 +15,7 @@
 </style>
 
 <?php 
-$title = "crud";
+$title = "Records";
 ?>
 
 

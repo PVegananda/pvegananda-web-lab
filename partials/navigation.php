@@ -82,31 +82,31 @@
     <hr>
     <ul class="nav nav-pills flex-column mb-auto">
       <li class="nav-item">
-        <a href="pengertian.php" class="nav-link text-white <?php if($page == 'pengertian.php'):echo 'active';endif;?>" aria-current="page">
+        <a href="home.php" class="nav-link text-white <?php if($page == 'home.php'):echo 'active';endif;?>" aria-current="page">
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"/></svg>
           Home
         </a>
       </li>
       <li>
-        <a href="snakegames.php" class="nav-link text-white <?php if($page == 'snakegames.php'):echo 'active';endif;?>" >
+        <a href="snake-game.php" class="nav-link text-white <?php if($page == 'snake-game.php'):echo 'active';endif;?>" >
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
           Games
         </a>
       </li>
       <li>
-        <a href="gya.php" class="nav-link text-white <?php if($page == 'gya.php'):echo 'active';endif;?>">
+        <a href="age-guess.php" class="nav-link text-white <?php if($page == 'age-guess.php'):echo 'active';endif;?>">
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg>
           Guess Your Age
         </a>
       </li>
       <li>
-        <a href="quiz.php" class="nav-link text-white <?php if($page == 'quiz.php'):echo 'active';endif;?>">
+        <a href="knowledge-quiz.php" class="nav-link text-white <?php if($page == 'knowledge-quiz.php'):echo 'active';endif;?>">
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
           Quiz
         </a>
       </li>
       <li>
-        <a href="crud.php" class="nav-link text-white <?php if($page == 'crud.php'):echo 'active';endif;?>">
+        <a href="records.php" class="nav-link text-white <?php if($page == 'records.php'):echo 'active';endif;?>">
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
           CRUD
         </a>
